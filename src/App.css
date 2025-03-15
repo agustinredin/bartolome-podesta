@@ -19,3 +19,8 @@ html {
 h1, h2, h3, h4, h5, h6, .font-highlight {
     font-family: "Funnel Display", sans-serif;
 }
+
+.smMap{
+    width: 95%;
+    height: 95%;
+}

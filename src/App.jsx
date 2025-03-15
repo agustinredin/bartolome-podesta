@@ -1,6 +1,7 @@
 import "./App.css"
 import Hero from "./components/Hero"
 import Container from "./components/ui/Container"
+import Footer from "./components/ui/Footer"
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <Container>
         <Hero/>
       </Container>
-      {/* aca footer */}
-    </>
+      <Footer/>
+      </>
   )
 }
 
