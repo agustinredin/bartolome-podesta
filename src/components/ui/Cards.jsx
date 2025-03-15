@@ -1,5 +1,5 @@
 import "../App.css";
-import ItemList from "./ItemList.js";
+import ItemList from "../../lib/ItemList.js";
 
 function Cards() {
   return (

@@ -1,10 +1,15 @@
 import "./App.css"
+import Hero from "./components/Hero"
+import Container from "./components/ui/Container"
 
 function App() {
   return (
-    <div className="bg-red-500 h-80 w-[20px]">
-    1
-    </div>
+    <>
+      <Container>
+        <Hero/>
+      </Container>
+      {/* aca footer */}
+    </>
   )
 }
 
