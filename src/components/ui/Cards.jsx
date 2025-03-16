@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../App.css";
 import ItemList from "../../lib/ItemList.js";
 
 function Cards() {

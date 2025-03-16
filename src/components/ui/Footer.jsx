@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
                 <div className="h-[10%] flex items-center pl-1 bg-gray-700">
                     <p className="flex flex-col w-1/2 text-sm">Copyright © 2012 - 2025 TermsFeed®. All rights reserved.</p>
-                    <nav className="flex flex-col w-1/2 flex-row justify-end pr-1">
+                    <nav className="flex w-1/2 flex-row justify-end pr-1">
                         <a className="pr-1" href=""><FaFacebook/></a>
                         <a className="pr-1" href=""><FaInstagram/></a>
                         <a href=""><FaXTwitter/></a>
