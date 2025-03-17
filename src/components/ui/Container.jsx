@@ -1,9 +1,15 @@
 import React from 'react'
+import { cn } from '../../lib/utils';
 
-const Container = () => {
+const Container = ({className, children, ...props}) => {
   return (
-    <div className="h-[700vh]">Container</div>
-  )
+    <section
+      className={cn("w-[85vw] max-w-screen-2xl mx-auto my-16", className)}
+      {...props}
+    >
+      {children}
+    </section>
+  );
 }
 
 export default Container

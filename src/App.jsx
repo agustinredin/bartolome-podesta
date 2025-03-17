@@ -1,17 +1,12 @@
-import "./App.css"
-import Hero from "./components/Hero"
-import Container from "./components/ui/Container"
-import Footer from "./components/ui/Footer"
+import "./App.css";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
-      <Container>
-        <Hero/>
-      </Container>
-      <Footer/>
-      </>
-  )
+      <Hero/>
+    </>
+  );
 }
 
-export default App
+export default App;
