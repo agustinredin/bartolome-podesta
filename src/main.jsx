@@ -13,7 +13,7 @@ import FrequentlyAsked from "./pages/FrequentlyAsked.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <bg/>
+    <div className="bg"/>
     <div className="antialiased">
       <NavBar />
       <BrowserRouter>

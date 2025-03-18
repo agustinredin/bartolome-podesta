@@ -5,7 +5,7 @@
     --color-white: #eee;
     --color-black: #2c2c2c;
     --color-green: #0c804a;
-    --color-blue: #327085;
+    --color-blue: #22586a;
     --color-lblue: #86b8c3;
     --font-highlight: "Funnel Display", sans-serif;
     --font-default: "Poppins", sans-serif;
@@ -13,13 +13,13 @@
 
 html {
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 112.5%;
     /* TEST: ajuste para que quede bien en viewport >lg */
-    color: var(--color-black);
+    color: var(--color-blue);
 }
 
-bg {
+.bg {
     position: fixed;
     top: 0;
     left: 0;
