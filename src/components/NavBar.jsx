@@ -37,7 +37,7 @@ const NavBar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <Container className="border border-red-500 my-0">
+    <Container className="my-0">
       <div className="flex justify-between items-center py-4">
         <NavBarLogo />
         <div className="hidden lg:flex gap-6 pt-2">
@@ -59,7 +59,7 @@ const NavBar = () => {
             className="p-1 rounded-sm bg-blue text-white"
             aria-label="Toggle menu"
           >
-            {!isOpen ? <IoMenuOutline size={42} /> : <IoClose size={42} />}
+            {!isOpen ? <IoMenuOutline size={42} /> : <IoClose size={42} className="bg-blue stroke-blue fill-blue text-blue" />}
           </button>
 
           {/* Full-screen canvas */}
@@ -80,7 +80,7 @@ const NavBar = () => {
                   className="absolute top-8 right-2 p-2 rounded-md text-black z-[100]"
                   aria-label="Close menu"
                 >
-                  <IoClose size={42} />
+                  <IoClose size={42} className="fill-blue" />
                 </button>
               </>
             )}

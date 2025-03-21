@@ -16,11 +16,11 @@ const Hero = () => {
         <p className="pl-3 py-4 text-lg sm:text-xl lg:text-2xl "> Conseguí <b>todos</b> tus insumos médicos en un sólo lugar.</p>
         <div className=""></div>
         <Button onClick={ctaClick} className="group">
-          <BiChat className="inline-block size-6"/><span className="pl-1">Hablanos</span>
+          <BiChat className="inline-block size-6"/><span className="pl-1">Hablemos</span>
         </Button>
       </div>
       <div className="lg:w-1/3 mx-auto flex justify-center lg:mx-0">
-        <img src='/hero_proto_1.png' className="max-h-64 lg:max-h-96 object-contain -z-10 opacity-50 lg:opacity-100"></img>
+        <img src='/hero_proto_1.png' className="max-h-64 lg:max-h-96 object-contain -z-10 opacity-75 lg:opacity-100"></img>
       </div>
     </Container>
   );
