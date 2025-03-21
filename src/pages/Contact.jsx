@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Container from "../components/ui/Container";
 import { useFormStatus } from "react-dom";
 import MailService from "../lib/MailService";
-import { IoMail, IoMailOutline } from "react-icons/io5";
+import { IoCallOutline, IoMail, IoMailOutline, IoMapSharp, IoPhonePortraitOutline, IoPinOutline, IoPinSharp } from "react-icons/io5";
 
 const Contact = () => {
   // contacto:
@@ -104,7 +104,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="xs:w-full self-end md:w-fit px-8 py-2 bg-blue text-white font-semibold hover:bg-slate-600 transition block rounded-tr-xl rounded-sm"
+          className="cursor-pointer xs:w-full self-end md:w-fit px-8 py-2 bg-blue text-white font-semibold hover:bg-slate-600 transition block rounded-tr-xl rounded-sm"
         >
           {pending ? "Enviando..." : "Enviar"}
         </button>
@@ -116,23 +116,29 @@ const ContactForm = () => {
 const ContactInfo = () => {
   return (
     <div className="w-1/2 px-16 py-12">
-      <div className="relative  text-white">
-        <h3 className="custom-outer-border-tl text-4xl p-2  rounded-xl rounded-br-none bg-lblue w-fit">
-          Nuestra
-        </h3>
-      </div>
-      <div className="relative  text-white">
-        <h3 className="custom-outer-border-br ml-8 p-2 text-4xl rounded-xl rounded-tl-none bg-lblue w-fit">
-          información
-        </h3>
-      </div>
+      <h3 className="custom-outer-border-tl text-4xl rounded-xl rounded-br-none w-fit">
+        Nuestra
+      </h3>
+      <h3 className="custom-outer-border-br text-4xl rounded-xl rounded-tl-none w-fit">
+        información
+      </h3>
       <div className="flex flex-col gap-8 my-8">
-        <div className="flex gap-4 items-center text-lg">
-          <IoMailOutline size={36}/><span>+12345678</span>
+        <div className="flex gap-3 items-center">
+          <IoMailOutline size={32} />
+          <span className="text-md">+12345678</span>
         </div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+        <div className="flex gap-3 items-center">
+          <IoCallOutline size={32} />
+          <span className="text-md">+12345678</span>
+        </div>
+        <div className="flex gap-3 items-center">
+          <IoMapSharp size={32} />
+          <span className="text-md">+12345678</span>
+        </div>
+        <div className="flex gap-3 items-center">
+          <IoMailOutline size={32} />
+          <span className="text-md">+12345678</span>
+        </div>
       </div>
     </div>
   );
