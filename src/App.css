@@ -10,6 +10,7 @@
     --font-highlight: "Funnel Display", sans-serif;
     --font-default: "Poppins", sans-serif;
     --breakpoint-xs: 0rem;
+    --breakpoint-xlg: 1462px;
 }
 
 html {
