@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <Container className='xlg:columns-2'>
       <section className='flex flex-col gap-y-10 w-full'>
-        <div className='flex flex-col justify-center items-center text-center max-w-[600px] mx-auto'>
+        <div className='flex flex-col justify-center xs:max-lg:text-center max-w-[600px] mx-auto'>
           <h1 className='text-2xl font-bold lg:text-4xl pb-5'>Sobre nosotros</h1>
           <p className='text-blue/80  lg:text-md'>
             Nos dedicamos a ofrecer insumos de salud de la más alta calidad para profesionales y centros médicos. Nuestro compromiso es garantizar productos confiables, seguros y accesibles, ayudando a optimizar la atención y el bienestar de los pacientes.
