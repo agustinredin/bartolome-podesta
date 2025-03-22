@@ -32,7 +32,7 @@ const AboutUs = () => {
         </div>
 
         <div className='flex justify-center'>
-          <img src="../public/about_1.png" alt="About us image" className='max-w-[40rem]' />
+          <img src="/about_1.png" alt="About us image" className='max-w-[40rem]' />
         </div>
       </section>
     </Container>
