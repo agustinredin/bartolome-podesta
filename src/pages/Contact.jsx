@@ -2,7 +2,17 @@ import React, { useRef, useState } from "react";
 import Container from "../components/ui/Container";
 import { useFormStatus } from "react-dom";
 import MailService from "../lib/MailService";
-import { IoCallOutline, IoMail, IoMailOutline, IoMapSharp, IoPhonePortraitOutline, IoPinOutline, IoPinSharp } from "react-icons/io5";
+import {
+  IoCallOutline,
+  IoMail,
+  IoMailOutline,
+  IoMapSharp,
+  IoPhonePortraitOutline,
+  IoPinOutline,
+  IoPinSharp,
+} from "react-icons/io5";
+import { BiMailSend, BiMapPin, BiPhone } from "react-icons/bi";
+import Map from "../components/ui/Map";
 
 const Contact = () => {
   // contacto:
@@ -15,7 +25,7 @@ const Contact = () => {
           <h1 className="text-5xl">Contactanos</h1>
           <p className="text-blue/80">Respuesta a la brevedad.</p>
         </div>
-        <div className="flex">
+        <div className="flex xs:max-lg:flex-col flex-row">
           <ContactForm />
           <ContactInfo />
         </div>
@@ -57,7 +67,7 @@ const ContactForm = () => {
       <form
         onSubmit={handleSubmit}
         ref={form}
-        className="flex flex-col space-y-4"
+        className="flex flex-col h-full space-y-4"
       >
         <div>
           <label className="block font-medium mb-1">Nombre y Apellido</label>
@@ -92,13 +102,13 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div>
+        <div className="flex flex-col grow">
           <label className="block font-medium mb-1">Mensaje</label>
           <textarea
             name="message"
             value={formState.message}
             onChange={handleChange}
-            className="w-full p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
+            className="w-full grow p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
             required
           ></textarea>
         </div>
@@ -115,31 +125,44 @@ const ContactForm = () => {
 
 const ContactInfo = () => {
   return (
-    <div className="w-1/2 px-16 py-12">
+    <div className="xs:max-md:w-full lg:w-1/2 px-8 py-12">
       <h3 className="custom-outer-border-tl text-4xl rounded-xl rounded-br-none w-fit">
-        Nuestra
+        Nuestra información
       </h3>
-      <h3 className="custom-outer-border-br text-4xl rounded-xl rounded-tl-none w-fit">
-        información
-      </h3>
-      <div className="flex flex-col gap-8 my-8">
+      {/* <div className="flex flex-col gap-3 my-8">
         <div className="flex gap-3 items-center">
           <IoMailOutline size={32} />
           <span className="text-md">+12345678</span>
         </div>
         <div className="flex gap-3 items-center">
           <IoCallOutline size={32} />
-          <span className="text-md">+12345678</span>
+          <span className="text-md">atencion@bartolomepodesta.com.ar</span>
         </div>
         <div className="flex gap-3 items-center">
           <IoMapSharp size={32} />
-          <span className="text-md">+12345678</span>
+          <span className="text-md">Av. Gaona 3157  -  C.A.B.A</span>
         </div>
-        <div className="flex gap-3 items-center">
-          <IoMailOutline size={32} />
-          <span className="text-md">+12345678</span>
+      </div> */}
+      <span className="text-md text-gray-600 mb-4">Estamos acá para ayudarte. Contactá directo con nosotros. <b>Horarios de atención: Lu a Vi 9 a 18</b></span>
+      <div className="py-6 shadow-lg flex flex-col justify-center">
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2">
+            <BiMailSend className="text-primary" />
+            <span>atencion@bartolomepodesta.com.ar</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <BiPhone className="text-primary" />
+            <span>+54 11 4583-8441</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <BiMapPin className="text-primary" />
+            <span>Av. Gaona 3157 - C.A.B.A.</span>
+          </div>
         </div>
       </div>
+      <div className="flex flex-col justify-end items-end flex-1 min-w-64 xs:max-lg:min-h-[40vmax] h-80">
+            {Map[0].googleMap}
+          </div>
     </div>
   );
 };
