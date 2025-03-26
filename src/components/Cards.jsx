@@ -3,7 +3,7 @@ import ProductList from "../lib/ProductList.js";
 
 function Cards() {
   return (
-    <div id="default-carousel" className="relative left-150 w-200" data-carousel="static">
+    <div id="default-carousel" className="relative" data-carousel="static">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {ProductList.slice(0, 5).map((producto) => (
           <div key={producto.id} className="hidden duration-500 ease-in-out" data-carousel-item>
