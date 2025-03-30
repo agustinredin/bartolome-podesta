@@ -10,7 +10,7 @@ function App() {
         <Hero/>
         <Contact/>
         <AboutUs/>
-        <Cards/>
+        {/* <Cards/> */}
     </>
   );
 }

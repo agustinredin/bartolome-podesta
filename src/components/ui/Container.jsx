@@ -4,7 +4,7 @@ import { cn } from '../../lib/utils';
 const Container = ({className, children, ...props}) => {
   return (
     <section
-      className={cn("w-[85vw] max-w-screen-2xl mx-auto my-16", className)}
+      className={cn("w-[85vw] max-w-screen-lg mx-auto my-16", className)}
       {...props}
     >
       {children}

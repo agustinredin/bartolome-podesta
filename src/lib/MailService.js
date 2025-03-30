@@ -7,8 +7,9 @@ class MailService {
     }
 
     async send(formValues) {
-        let serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
-        let templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+        
+        let serviceId = import.meta.env.VITE_EMAILJS_DEFAULT_SERVICE_ID
+        let templateId = import.meta.env.VITE_EMAILJS_DEFAULT_TEMPLATE_ID
         await emailjs.send(serviceId, templateId, formValues)
     }
 }
