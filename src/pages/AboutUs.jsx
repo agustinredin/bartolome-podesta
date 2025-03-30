@@ -6,17 +6,17 @@ const AboutUs = () => {
   return (
     <Container>
       <section className="flex flex-col lg:flex-row gap-y-10 w-full">
-        <div className="flex flex-col justify-center xs:max-lg:text-center max-w-[600px] mx-auto">
+        <div className="flex flex-col justify-center xs:max-lg:text-center max-w-[600px] mx-auto lg:mx-0 lg:mr-auto">
           <h1 className="text-2xl font-bold lg:text-4xl pb-5">
             Sobre nosotros
           </h1>
-          <p className="text-blue/80 text-sm lg:text-md">
+          <p className="text-blue/80 text-md">
             Nos dedicamos a ofrecer insumos de salud de la más alta calidad para
             profesionales y centros médicos. Nuestro compromiso es garantizar
             productos confiables, seguros y accesibles, ayudando a optimizar la
             atención y el bienestar de los pacientes.
           </p>
-          <div className="flex items-center justify-center xs:max-lg:py-8">
+          <div className="flex items-center justify-center py-6 xs:max-lg:py-8">
             <div className="flex flex-col justify-evenly max-w-[600px]">
               <div className="flex pb-4">
                 <Hospital
@@ -28,7 +28,7 @@ const AboutUs = () => {
                   <h2 className="text-lg font-semibold lg:text-2xl">
                     Calidad Garantizada
                   </h2>
-                  <p className="text-blue/80  text-sm lg:text-md">
+                  <p className="text-blue/80  text-md">
                     Trabajamos con proveedores certificados y cumplimos con los
                     estándares más exigentes del sector.
                   </p>
@@ -44,7 +44,7 @@ const AboutUs = () => {
                   <h2 className="text-lg font-semibold lg:text-2xl">
                     Amplia Variedad
                   </h2>
-                  <p className="text-blue/80  text-sm lg:text-md">
+                  <p className="text-blue/80 text-md">
                     Ofrecemos un catálogo extenso de productos esenciales para
                     clínicas, hospitales y profesionales de la salud.
                   </p>

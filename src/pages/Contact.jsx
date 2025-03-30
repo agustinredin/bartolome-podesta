@@ -152,7 +152,7 @@ const ContactInfo = () => {
         </div>
       </div> */}
       <span className="text-md text-gray-600 mb-4">Estamos acá para ayudarte. Contactá directo con nosotros. <b>Horarios de atención: Lu a Vi 9 a 18</b></span>
-      <div className="py-6 shadow-lg flex flex-col justify-center">
+      <div className="py-10 lg:py-6 flex flex-col justify-center">
         <div className="space-y-4">
           <div className="flex items-center space-x-2 text-wrap">
             <BiMailSend className="text-primary" />
