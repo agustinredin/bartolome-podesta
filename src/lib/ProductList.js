@@ -47,6 +47,6 @@ const Products = [
       description: "Solución de clorhexidina al 4% con dosificador, utilizada como antiséptico en procedimientos médicos. Disponible en presentaciones de 250 ml, 500 ml, 1 litro y 5 litros.",
       image: "https://tienda.euroswiss.com.ar/catalogo/varios/antisepticos/clorhexidina/producto/clorhexidina-sertex"
     }
-  ].map(item => ({...item, image: 'https://placehold.co/200'}))
+  ].map(item => ({...item, image: `https://placehold.co/${item.id * 100}`}))
 
 export default Products

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../components/ui/Container";
 import ProductList from "../lib/ProductList";
+import ProductCard from "../components/ProductCard"
 
 const Products = () => {
   //challenge: hacer el map con ProductCard (/components/ProductCard.jsx) y hacer un mini form de contacto. EXACTAMENTE como https://tienda.euroswiss.com.ar/catalogo
@@ -12,7 +13,7 @@ const Products = () => {
         </div>
         <div className="flex xs:max-lg:flex-col flex-row">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {ProductList.map((product)=> (<div className="col-auto">{product.title}</div>))}
+            {ProductList.map((product)=> (<ProductCard className="col-auto">{product.title}</ProductCard>))}
           </div>
           <div className="flex-1/3">
             aca va el contacto
