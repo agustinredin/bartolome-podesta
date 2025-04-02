@@ -5,7 +5,7 @@ import Container from "./ui/Container";
 const Footer = () => {
 
   return (
-    <footer className="flex justify-center bg-blue/60 rounded-t-2xl mt-64">
+    <footer className="flex justify-center bg-blue/60 rounded-t-2xl mt-32">
       <Container className="lg:max-w-[70vw] !my-0 pt-8 xs:max-lg:my-2 text-white flex flex-col justify-center">
         <div className="flex justify-between xs:max-lg:justify-center xs:max-lg:flex-col lg:pb-8">
           <div className="flex xs:max-lg:flex-col xs:max-lg:text-center">

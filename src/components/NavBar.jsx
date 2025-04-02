@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "./ui/Container";
-import { CiMenuBurger, CiMenuFries } from "react-icons/ci";
 import { IoClose, IoMenuOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 const NavBar = () => {
   const navItems = [
@@ -94,9 +94,9 @@ const NavBar = () => {
                     className="my-8 text-2xl sm:text-3xl font-bold"
                     onClick={() => toggleMenu()}
                   >
-                    <a href={item.href} className={item.className}>
+                    <Link to={item.href} className={item.className}>
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

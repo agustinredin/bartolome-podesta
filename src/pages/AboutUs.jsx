@@ -28,7 +28,7 @@ const AboutUs = () => {
                   <h2 className="text-lg font-semibold lg:text-2xl">
                     Calidad Garantizada
                   </h2>
-                  <p className="text-blue/80  text-md">
+                  <p className="text-blue/80 text-md">
                     Trabajamos con proveedores certificados y cumplimos con los
                     estándares más exigentes del sector.
                   </p>
@@ -55,7 +55,7 @@ const AboutUs = () => {
         </div>
 
         <div className="flex justify-center">
-          <img src="/about_1_proto.png" alt="About us image" />
+          <img src="/about_1_proto.png" className="object-contain" alt="About us image" />
         </div>
       </section>
     </Container>

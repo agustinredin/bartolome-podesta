@@ -1,7 +1,7 @@
 import "../App.css";
 import ProductList from "../lib/ProductList.js";
 
-function Cards() {
+function ProductSlider() {
   return (
     <div id="default-carousel" className="relative" data-carousel="static">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -45,4 +45,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default ProductSlider;

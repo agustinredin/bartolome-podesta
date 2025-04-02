@@ -14,11 +14,11 @@ import PageTransition from "./components/ui/PageTransition.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <PageTransition>
-      <div className="bg" />
-      <div className="antialiased">
+    <div className="bg" />
+    <div className="antialiased">
+      <BrowserRouter>
         <NavBar />
-        <BrowserRouter>
+        <PageTransition>
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/products" element={<Products />} />
@@ -26,9 +26,9 @@ createRoot(document.getElementById("root")).render(
             <Route path="/about" element={<AboutUs />} />
             <Route path="/faq" element={<FrequentlyAsked />} />
           </Routes>
-        </BrowserRouter>
-        <Footer />
-      </div>
-    </PageTransition>
+        </PageTransition>
+      </BrowserRouter>
+      <Footer />
+    </div>
   </StrictMode>
 );

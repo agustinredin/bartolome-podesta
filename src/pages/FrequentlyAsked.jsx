@@ -1,37 +1,40 @@
-import React from 'react'
-import Container from '../components/ui/Container'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/Accordion";
+import React from "react";
+import Container from "../components/ui/Container";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/Accordion";
 
 const FrequentlyAsked = () => {
-
   const faqs = [
     {
-      question: "¿Qué es M2Go?",
-      answer:
-        "Es una plataforma para la compra y entrega de comida. Nunca ha sido más fácil y rápido tener tu plato favorito.",
+      question: "¿Qué tipo de productos médicos ofrecen?",
+      answer: "Ofrecemos una amplia variedad de insumos médicos, equipos de diagnóstico, material descartable y equipamiento hospitalario.",
     },
     {
-      question: "¿Dónde está disponible M2Go?",
-      answer:
-        "Revisa la aplicación y encontrarás los restaurantes cercanos a tu localidad. También puedes visualizar en el mapa toda la cobertura de M2Go.",
+      question: "¿Puedo comprar productos sin ser profesional de la salud?",
+      answer: "Sí, algunos productos están disponibles para el público en general, pero ciertos insumos y equipos requieren documentación profesional.",
     },
     {
-      question: "¿Cómo utilizo M2Go?",
-      answer:
-        '<ol class="list-decimal"><li>Accede la aplicación e indica la dirección de entrega.</li><li>Elige, de la lista, el restaurante de tu preferencia Revisa el menú.</li> <li>Haz tu pedido y paga en línea.</li> <li>Realiza el seguimiento de tu orden.</li> <li>Veras cuando el restaurante acepta y empieza a preparar tu comida.</li> <li>Además, podrás ver la información del repartidor, una vez sea asignado.</li></ol>',
+      question: "¿Realizan envíos a todo el país?",
+      answer: "Sí, realizamos envíos a todo el territorio nacional a través de servicios de logística seguros y confiables.",
     },
     {
-      question: "¿Cuánto cuesta M2Go?",
-      answer:
-        "Registrarte como cliente de M2Go es gratis. El costo por comida varía según los restaurantes participantes.",
+      question: "¿Puedo realizar una devolución si el producto no es el correcto?",
+      answer: "Sí, aceptamos devoluciones en caso de errores en el pedido o productos defectuosos, siempre que se notifiquen dentro de los primeros 7 días hábiles.",
     },
     {
-      question: "¿Dónde entrega el repartidor?",
-      answer:
-        "Entregará el pedido en la puerta, a la dirección que hayas ingresado en la plataforma.",
+      question: "¿Cuáles son los métodos de pago disponibles?",
+      answer: "Aceptamos transferencias bancarias y pagos a través de plataformas electrónicas.",
+    },
+    {
+      question: "¿Los productos tienen garantía?",
+      answer: "Sí, todos nuestros productos cuentan con garantía oficial del fabricante. La duración depende del tipo de producto.",
     },
   ];
-
+  
 
   return (
     <div className="min-w-full flex flex-col lg:flex-row justify-between">
@@ -40,32 +43,31 @@ const FrequentlyAsked = () => {
           <h1 className="text-2xl lg:text-5xl">Preguntas frecuentes</h1>
           <p className="text-blue/80">Respuesta a la brevedad.</p>
         </div>
-        <div className="flex xs:max-lg:flex-col flex-row">
-        <Accordion type="single" collapsible className="w-full my-8">
-              {faqs.map((faq, index) => (
-                <AccordionItem
-                  key={`item-${index}`}
-                  value={`item-${index}`}
-                  className="my-4"
-                >
-                  <AccordionTrigger className="text-left">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div
-                      className="text-muted text-lg mx-6"
-                      dangerouslySetInnerHTML={{ __html: faq.answer }}
-                    ></div>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+        <div className="flex xs:max-lg:flex-col flex-row justify-center items-center mx-auto max-w-screen-sm">
+          <Accordion type="single" collapsible className="w-full my-8">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={`item-${index}`}
+                value={`item-${index}`}
+                className="my-4"
+              >
+                <AccordionTrigger className="text-left text-lg cursor-pointer">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div
+                    className="text-muted text-md mr-6 lg:m-0 lg:mx-6"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  ></div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </Container>
     </div>
-  )
-}
-
+  );
+};
 
 // export default function Page() {
 //   return (
@@ -75,7 +77,7 @@ const FrequentlyAsked = () => {
 //           <h2 className="text-5xl font-bold text-gray-900 text-center mt-10">
 //             Preguntas Frecuentes
 //           </h2>
-          
+
 //         <h4 className="my-8 text-muted">
 //           ¿Tienes alguna pregunta que no se encuentra aquí?{" "}
 //           <Link
@@ -92,4 +94,4 @@ const FrequentlyAsked = () => {
 //     )
 // }
 
-export default FrequentlyAsked
+export default FrequentlyAsked;
