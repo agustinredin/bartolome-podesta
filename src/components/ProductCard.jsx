@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function ProductCard({ id, title, description, className }) {
   return (
-    <div className={`flex-3/4 p-2 ${className}`}>
+    <Link className={`flex-3/4 p-2 ${className}`}>
       <div className="flex flex-col p-4 bg-[#fff] rounded-lg shadow-md overflow-hidden border border-gray-100">
         <div className="relative h-64">
           <img
