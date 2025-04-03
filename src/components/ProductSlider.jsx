@@ -17,7 +17,7 @@ function ProductSlider() {
             data-carousel-item
           >
             <img
-              src={producto.image}
+              src={`/products/${producto.id}.jpg`}
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt={producto.title}
             />
