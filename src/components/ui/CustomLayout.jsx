@@ -9,7 +9,7 @@ const Layout = () => {
   const isProductPage = location.pathname.includes("/product");
   return isProductPage ? (
     <>
-      <Container className="flex">
+      <Container className="flex !max-w-screen-xl w-[95vw]">
         <Outlet />
         <AsideContact />
       </Container>

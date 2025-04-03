@@ -13,12 +13,14 @@ import FrequentlyAsked from "./pages/FrequentlyAsked.jsx";
 import PageTransition from "./components/ui/PageTransition.jsx";
 import ProductDetail from "./components/ProductDetail.jsx";
 import Layout from "./components/ui/CustomLayout.jsx";
+import PageLoader from "./components/ui/PageLoader.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div className="bg" />
     <div className="antialiased">
       <BrowserRouter>
+        <PageLoader/>
         <NavBar />
         <PageTransition>
           <Routes>

@@ -82,3 +82,31 @@ h6,
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+
+  .load-wrapper {
+    background: rgba(34,88,106, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    animation: fadeout 2s cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+}
