@@ -10,12 +10,12 @@ const Footer = () => {
         <div className="flex justify-between xs:max-lg:justify-center xs:max-lg:flex-col lg:pb-8">
           <div className="flex xs:max-lg:flex-col xs:max-lg:text-center">
             <div className="flex flex-col pl-1 lg:pr-8">
-              <div className="xs:max-lg:py-4 lg:h-36 rounded-2xl lg:p-2">
+              <div className="xs:max-lg:py-4 lg:h-40 rounded-2xl lg:p-2">
                 <h3 className="lg:mb-[1.3rem] py-1 px-2 lg:bg-blue rounded-2xl lg:w-fit">Dirección</h3>
                 <p className="text-sm">Av.Gaona 3157 - C.A.B.A</p>
                 <p className="text-sm">C1416DSG - Rep.Argentina</p>
               </div>
-              <div className="xs:max-lg:py-4 lg:h-36 p-2">
+              <div className="xs:max-lg:py-4 lg:h-40 p-2">
                 <h3 className="lg:mb-[1.3rem] lg:my-[1.3rem] py-1 px-2 lg:bg-blue rounded-2xl lg:w-fit">Contacto</h3>
                 <p className="text-sm">Mail: ventas@bartolomepodesta.com.ar                </p>
                 <p className="text-sm">Teléfono: +54 11 4583-8441</p>
