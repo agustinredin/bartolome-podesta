@@ -10,6 +10,7 @@ function ProductDetail() {
   const [found, setFound] = useState(true);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setTimeout(() => {
       let product = ProductList.find((i) => i.id == id);
       if (product) setProduct(product);
@@ -30,7 +31,7 @@ function ProductDetail() {
         </div>
 
         {/* Product Details */}
-        <div className="space-y-6">
+        <div className="space-y-6 pr-4">
           <div className="xs:max-lg:text-center">
             <h1 className="text-3xl font-bold mb-2">
               {product.title}

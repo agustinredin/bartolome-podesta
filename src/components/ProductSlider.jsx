@@ -11,7 +11,7 @@ function ProductSlider() {
       data-carousel="slide"
     >
       {/* Carousel wrapper */}
-      <h1 className="text-2xl lg:text-5xl">Destacados</h1>
+      <h1 className="text-2xl lg:text-5xl text-green">Destacados</h1>
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {ProductList.map((producto) => (
           <div

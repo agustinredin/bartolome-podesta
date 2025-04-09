@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "./ui/Container";
 import { IoClose, IoMenuOutline } from "react-icons/io5";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 const NavBar = () => {
   const navItems = [
@@ -25,6 +25,7 @@ const NavBar = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const currentDirectory = useLocation().pathname;
 
   useEffect(() => {
     document.addEventListener("keydown", function (e) {
@@ -34,6 +35,11 @@ const NavBar = () => {
     });
   });
 
+  const currentDirectoryStyles = {
+    pointerEvents: 'none',
+    color: 'var(--color-black)'
+  }
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -41,17 +47,29 @@ const NavBar = () => {
       <div className="flex justify-between items-center py-4">
         <NavBarLogo />
         <div className="hidden lg:flex gap-6 pt-2">
-          {navItems.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              className={
-                "font-highlight transition text-blue hover:text-lblue hover:-translate-y-1"
-              }
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item, index) => {
+            let isCurrentDirectory = currentDirectory.includes(item.href);
+            console.log(
+              "currdir",
+              currentDirectory,
+              item.href,
+              "IS:",
+              isCurrentDirectory
+            );
+            
+            return (
+              <a
+                key={index}
+                href={item.href}
+                className={
+                  "font-highlight transition text-blue hover:text-lblue hover:-translate-y-1"
+                }
+                style={isCurrentDirectory == true ? {...currentDirectoryStyles} : {}}
+              >
+                {item.name}
+              </a>
+            );
+          })}
         </div>
         <div className="flex lg:hidden pt-2">
           <button
@@ -59,7 +77,14 @@ const NavBar = () => {
             className="p-1 rounded-sm bg-blue text-white"
             aria-label="Toggle menu"
           >
-            {!isOpen ? <IoMenuOutline size={42} /> : <IoClose size={42} className="bg-blue stroke-blue fill-blue text-blue" />}
+            {!isOpen ? (
+              <IoMenuOutline size={42} />
+            ) : (
+              <IoClose
+                size={42}
+                className="bg-blue stroke-blue fill-blue text-blue"
+              />
+            )}
           </button>
 
           {/* Full-screen canvas */}
@@ -73,7 +98,7 @@ const NavBar = () => {
             {isOpen && (
               <>
                 <div className="absolute top-8 scale-[0.8]">
-                  <NavBarLogo/>
+                  <NavBarLogo />
                 </div>
                 <button
                   onClick={toggleMenu}
@@ -88,10 +113,19 @@ const NavBar = () => {
             {/* Menu options */}
             <ul className="flex flex-col items-center justify-center h-full text-2xl">
               {navItems.map((item, index) => {
+                let isCurrentDirectory = currentDirectory.includes(item.href);
+                console.log(
+                  "currdir",
+                  currentDirectory,
+                  item.href,
+                  "IS:",
+                  isCurrentDirectory
+                );
                 return (
                   <li
                     key={index}
                     className="my-8 text-2xl sm:text-3xl font-bold"
+                    style={isCurrentDirectory == true ? {...currentDirectoryStyles} : {}}
                     onClick={() => toggleMenu()}
                   >
                     <Link to={item.href} className={item.className}>

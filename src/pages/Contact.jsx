@@ -12,8 +12,8 @@ const Contact = () => {
     <div className="min-w-full flex flex-col lg:flex-row justify-between" id="contact">
       <Container>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl lg:text-5xl">Contactanos</h1>
-          <p className="text-blue/80">Respuesta a la brevedad.</p>
+          <h1 className="text-2xl lg:text-5xl text-green">Contactanos</h1>
+          <p className="text-green/80">Respuesta a la brevedad.</p>
         </div>
         <div className="flex xs:max-lg:flex-col flex-row">
           <ContactForm />
@@ -46,16 +46,17 @@ const ContactInfo = () => {
           <span className="text-md">Av. Gaona 3157  -  C.A.B.A</span>
         </div>
       </div> */}
-      <span className="text-md text-gray-600 mb-4">Estamos acá para ayudarte. Contactá directo con nosotros. <b>Horarios de atención: Lu a Vi 9 a 18</b></span>
+      <span className="text-md mb-4">Estamos acá para ayudarte. Contactá directo con nosotros. <b>Horarios de atención: Lu a Vi 8 a 17</b></span>
       <div className="py-10 lg:py-6 flex flex-col justify-center">
         <div className="space-y-4">
           <div className="flex items-center space-x-2 text-wrap">
             <BiMailSend className="text-primary" />
-            <span className="overflow-wrap">atencion@bartolomepodesta.com.ar</span>
+            <span className="overflow-wrap">ventas@bartolomepodesta.com.ar</span>
           </div>
           <div className="flex items-center space-x-2">
             <BiPhone className="text-primary" />
             <span className="overflow-wrap">+54 11 4583-8441</span>
+            <span className="overflow-wrap">+54 11 4581-2849</span>
           </div>
           <div className="flex items-center space-x-2">
             <BiMapPin className="text-primary" />

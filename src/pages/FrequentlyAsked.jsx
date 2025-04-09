@@ -40,8 +40,8 @@ const FrequentlyAsked = () => {
     <div className="min-w-full flex flex-col lg:flex-row justify-between">
       <Container>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl lg:text-5xl">Preguntas frecuentes</h1>
-          <p className="text-blue/80">Respuesta a la brevedad.</p>
+          <h1 className="text-2xl lg:text-5xl text-green">Preguntas frecuentes</h1>
+          <p className="text-green/80">Respuesta a la brevedad.</p>
         </div>
         <div className="flex xs:max-lg:flex-col flex-row justify-center items-center mx-auto max-w-screen-sm">
           <Accordion type="single" collapsible className="w-full my-8">

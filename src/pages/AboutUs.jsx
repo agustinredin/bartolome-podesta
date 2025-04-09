@@ -7,10 +7,10 @@ const AboutUs = () => {
     <Container>
       <section className="flex flex-col lg:flex-row gap-y-10 w-full">
         <div className="flex flex-col justify-center xs:max-lg:text-center max-w-[600px] mx-auto lg:mx-0 lg:mr-auto">
-          <h1 className="text-2xl font-bold lg:text-4xl pb-5">
+          <h1 className="text-2xl font-bold lg:text-4xl pb-5 text-green">
             Sobre nosotros
           </h1>
-          <p className="text-blue/80 text-md">
+          <p className="text-md">
             Nos dedicamos a ofrecer insumos de salud de la más alta calidad para
             profesionales y centros médicos. Nuestro compromiso es garantizar
             productos confiables, seguros y accesibles, ayudando a optimizar la
@@ -22,13 +22,13 @@ const AboutUs = () => {
                 <Hospital
                   size={75}
                   absoluteStrokeWidth={false}
-                  className="stroke-1 mr-4 hidden lg:block"
+                  className="stroke-1 mr-4 stroke-blue hidden lg:block"
                 />
                 <div className="flex flex-col">
                   <h2 className="text-lg font-semibold lg:text-2xl">
                     Calidad Garantizada
                   </h2>
-                  <p className="text-blue/80 text-md">
+                  <p className="text-md">
                     Trabajamos con proveedores certificados y cumplimos con los
                     estándares más exigentes del sector.
                   </p>
@@ -38,13 +38,13 @@ const AboutUs = () => {
                 <BriefcaseMedical
                   size={75}
                   absoluteStrokeWidth={false}
-                  className="stroke-1 mr-4 hidden lg:block"
+                  className="stroke-1 mr-4 stroke-blue hidden lg:block"
                 />
                 <div className="flex flex-col">
                   <h2 className="text-lg font-semibold lg:text-2xl">
                     Amplia Variedad
                   </h2>
-                  <p className="text-blue/80 text-md">
+                  <p className=" text-md">
                     Ofrecemos un catálogo extenso de productos esenciales para
                     clínicas, hospitales y profesionales de la salud.
                   </p>

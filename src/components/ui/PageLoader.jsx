@@ -18,7 +18,7 @@ export default function PageLoader() {
     handleStart() 
     const timer = setTimeout(() => {
       handleComplete()
-    }, 2500)
+    }, 1500)
 
     return () => clearTimeout(timer)
   }, [pathname])

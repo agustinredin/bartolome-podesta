@@ -4,7 +4,7 @@
 @theme {
     --color-white: #eee;
     --color-black: #2c2c2c;
-    --color-green: #0c804a;
+    --color-green: #004300;
     --color-blue: #22586a;
     --color-lblue: #86b8c3;
     --font-highlight: "Funnel Display", sans-serif;
@@ -18,7 +18,7 @@ html {
     font-weight: 400;
     font-size: 112.5%;
     /* TEST: ajuste para que quede bien en viewport >lg */
-    color: var(--color-blue);
+    color: var(--color-black);
 }
 
 .bg {
@@ -95,7 +95,7 @@ h6,
     opacity: 1;
     visibility: visible;
     z-index: 999;
-    animation: fadeout 2s cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    animation: fadeout 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
 @keyframes fadeout {

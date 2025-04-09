@@ -33,7 +33,7 @@ const ContactForm = ({aside}) => {
     };
   
     return (
-      <div className={`bg-blue/60 text-white px-8 py-6 rounded-tr-[3rem] rounded-sm xs:max-lg:w-full ${!aside ? `lg:w-1/2 my-10` : ``} `}>
+      <div className={`bg-blue/80 text-white px-8 py-6 rounded-tr-[3rem] rounded-sm xs:max-lg:w-full ${!aside ? `lg:w-1/2 my-10` : ``} `}>
         <form
           onSubmit={handleSubmit}
           ref={formRef}
@@ -52,7 +52,7 @@ const ContactForm = ({aside}) => {
               name="fullName"
               value={formState.fullName}
               onChange={handleChange}
-              className="w-full p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
+              className="w-full p-2 transition border-[2px] bg-lblue/50 text-[#e9e9e9] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
               required
             />
           </div>
@@ -63,7 +63,7 @@ const ContactForm = ({aside}) => {
               name="email"
               value={formState.email}
               onChange={handleChange}
-              className="w-full p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
+              className="w-full p-2 transition border-[2px] bg-lblue/50 text-[#e9e9e9] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
               required
             />
           </div>
@@ -74,7 +74,7 @@ const ContactForm = ({aside}) => {
               name="phone"
               value={formState.phone}
               onChange={handleChange}
-              className="w-full p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
+              className="w-full p-2 transition border-[2px] bg-lblue/50 text-[#e9e9e9] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
               required
             />
           </div>
@@ -84,14 +84,14 @@ const ContactForm = ({aside}) => {
               name="message"
               value={formState.message}
               onChange={handleChange}
-              className="w-full grow p-2 transition border-[2px] border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
+              className="w-full p-2 transition border-[2px] bg-lblue/50 text-[#e9e9e9] grow border-gray-300 rounded-lg focus:outline-none focus:bg-lblue/80"
               required
             ></textarea>
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="cursor-pointer xs:w-full self-end md:w-fit px-8 py-2 bg-blue text-white font-semibold hover:bg-slate-600 transition block rounded-tr-xl rounded-sm"
+            className="cursor-pointer xs:w-full self-end md:w-fit px-8 py-2 text-black bg-white font-semibold hover:bg-lblue/50 hover:text-white transition block rounded-tr-xl rounded-sm"
           >
             {pending ? "Enviando..." : "Enviar"}
           </button>
