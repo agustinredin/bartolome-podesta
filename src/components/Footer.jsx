@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <div className="xs:max-lg:py-4 lg:h-40 p-2">
                 <h3 className="lg:mb-[1.3rem] lg:my-[1.3rem] py-1 px-2 lg:bg-blue rounded-2xl lg:w-fit">Contacto</h3>
-                <p className="text-sm">Mail: ventas@bartolomepodesta.com.ar                </p>
+                <p className="text-sm">Mail: ventas@bartolomepodesta.com.ar</p>
                 <p className="text-sm">Teléfono: +54 11 4583-8441</p>
                 <p className="text-sm">4581-2849 4582-4086</p>
               </div>
