@@ -4,6 +4,11 @@ import ProductCard from "./ProductCard.jsx";
 import Container from "./ui/Container.jsx";
 
 function ProductSlider() {
+
+  const ids = new Set(ProductList.map(i => i.id))
+  const uniqueProducts = Array.from(ids).map((id) => {
+    return ProductList.find((product) => product.id === id);
+  });
   return (
     <Container
       id="default-carousel"
@@ -13,7 +18,7 @@ function ProductSlider() {
       {/* Carousel wrapper */}
       <h1 className="text-2xl lg:text-5xl text-green">Destacados</h1>
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {ProductList.map((producto) => (
+        {uniqueProducts.map((producto) => (
           <div
             key={producto.id}
             className="hidden duration-500 ease-in-out w-1/2"

@@ -6,8 +6,8 @@ function ProductCard({ id, title, description, className }) {
       <div className="flex flex-col p-4 bg-[#fff] rounded-lg shadow-md overflow-hidden border border-gray-100">
         <div className="relative h-64">
           <img
-            src={`/products/${id}.jpg`}
-            className="h-full object-cover w-full"
+            src={`/products/${id}.png`}
+            className="h-full object-contain w-full"
             alt={title}
           />
         </div>

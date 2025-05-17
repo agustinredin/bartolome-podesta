@@ -49,13 +49,7 @@ const NavBar = () => {
         <div className="hidden lg:flex gap-6 pt-2">
           {navItems.map((item, index) => {
             let isCurrentDirectory = currentDirectory.includes(item.href);
-            console.log(
-              "currdir",
-              currentDirectory,
-              item.href,
-              "IS:",
-              isCurrentDirectory
-            );
+            
             
             return (
               <a
@@ -114,13 +108,7 @@ const NavBar = () => {
             <ul className="flex flex-col items-center justify-center h-full text-2xl">
               {navItems.map((item, index) => {
                 let isCurrentDirectory = currentDirectory.includes(item.href);
-                console.log(
-                  "currdir",
-                  currentDirectory,
-                  item.href,
-                  "IS:",
-                  isCurrentDirectory
-                );
+                
                 return (
                   <li
                     key={index}
